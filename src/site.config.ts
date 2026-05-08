@@ -10,7 +10,7 @@
 export const siteConfig = {
   // ── Identity ───────────────────────────────────────────────────────────────
   businessName:   "Tallahassee Foundation Pros",
-  tagline:        "Foundation repair in Tallahassee — helical piers, slab lifting, free inspection",
+  tagline:        "Foundation repair in Tallahassee, helical piers, slab lifting, free inspection",
   niche:          "foundation-repair",
   primaryCity:    "Tallahassee",
   state:          "FL",

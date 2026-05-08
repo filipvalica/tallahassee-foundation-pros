@@ -9,60 +9,60 @@
 
 export const siteConfig = {
   // ── Identity ───────────────────────────────────────────────────────────────
-  businessName:   "PLACEHOLDER Business Name",       // e.g. "Vallejo Pest Pros"
-  tagline:        "PLACEHOLDER one-line value prop",  // e.g. "Same-day pest control in Vallejo"
-  niche:          "PLACEHOLDER-niche-slug",           // e.g. "pest-control" (URL-safe)
-  primaryCity:    "PLACEHOLDER City",                 // e.g. "Vallejo"
-  state:          "XX",                               // 2-letter state code
-  phone:          "+1-555-000-0000",                  // Twilio tracking number
-  email:          "leads@example.com",
+  businessName:   "Tallahassee Foundation Pros",
+  tagline:        "Foundation repair in Tallahassee — helical piers, slab lifting, free inspection",
+  niche:          "foundation-repair",
+  primaryCity:    "Tallahassee",
+  state:          "FL",
+  phone:          "+1-PLACEHOLDER-TWILIO",   // replace with Twilio tracking number
+  email:          "leads@tallahasseefoundationpros.com",
 
   // ── Geography ──────────────────────────────────────────────────────────────
-  serviceArea:    ["PLACEHOLDER City", "Area 2", "Area 3"],
-  addressStreet:  "PLACEHOLDER Street Address",
-  addressZip:     "00000",
+  serviceArea:    ["Tallahassee", "Midtown", "Killearn Estates", "Southwood", "Crawfordville", "Quincy", "Monticello"],
+  addressStreet:  "Tallahassee, FL",
+  addressZip:     "32301",
 
   // ── Services ───────────────────────────────────────────────────────────────
   services: [
-    "PLACEHOLDER Primary Service",
-    "PLACEHOLDER Service Two",
-    "PLACEHOLDER Service Three",
+    "Free Foundation Inspection",
+    "Helical & Steel Push Pier Installation",
+    "Slab Lifting & Leveling",
+    "Foundation Crack Repair",
+    "Drainage Correction",
   ],
 
   // ── Trust proof points ─────────────────────────────────────────────────────
   trust: {
-    responseTime:   "PLACEHOLDER (e.g. Same-day service)",
-    yearsInBusiness: 0,          // update to real number if known
-    certifications:  "PLACEHOLDER (e.g. Licensed & insured)",
-    guarantee:       "PLACEHOLDER (e.g. Satisfaction guaranteed)",
+    responseTime:    "Free inspection within 48 hours",
+    yearsInBusiness: 0,
+    certifications:  "FL DBPR Licensed — Certified Specialty Contractor",
+    guarantee:       "Lifetime transferable warranty on pier installations",
   },
 
   // ── Call tracking (Twilio) ─────────────────────────────────────────────────
-  // Pre-revenue: buy a Twilio number (~$1.15/mo), paste it above as `phone`,
-  // and fill these in so the Worker can forward calls.
   twilio: {
     accountSid:     "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    forwardToPhone: "+1-555-000-0001",  // tenant's real number
+    forwardToPhone: "+1-PLACEHOLDER-FORWARD",
   },
 
   // ── Analytics ─────────────────────────────────────────────────────────────
-  ga4MeasurementId: "G-XXXXXXXXXX",    // leave as-is until GA4 property is set up
+  ga4MeasurementId: "G-XXXXXXXXXX",
 
   // ── Design ────────────────────────────────────────────────────────────────
-  accentColor: "#1e40af",              // hex; swap per niche (blue=trust, green=eco, etc.)
+  accentColor: "#7c3f1a",   // brick/earth tone for foundation repair
 
   // ── Schema.org ────────────────────────────────────────────────────────────
   schema: {
-    businessType: "LocalBusiness",     // or "Plumber", "Pest Control Service", etc.
+    businessType: "HomeAndConstructionBusiness",
     priceRange:   "$$",
-    areaServed:   "PLACEHOLDER City metro area",
-    openingHours: "Mo-Su 00:00-24:00",
+    areaServed:   "Tallahassee, FL and surrounding Leon County",
+    openingHours: "Mo-Fr 07:00-18:00",
   },
 
   // ── Portfolio agent metadata ───────────────────────────────────────────────
-  portfolioId:      "placeholder-site-01",   // kebab-case unique ID
-  semrushProjectId: "",                      // fill after SEMrush project created
-  gbpLocationId:    "",                      // fill after GBP listing claimed
+  portfolioId:      "tallahassee-foundation-pros",
+  semrushProjectId: "",
+  gbpLocationId:    "",
 } as const;
 
 export type SiteConfig = typeof siteConfig;

@@ -152,18 +152,74 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"areas": {
-"example-area.mdx": {
-	id: "example-area.mdx";
-  slug: "example-area";
+"crawfordville.mdx": {
+	id: "crawfordville.mdx";
+  slug: "crawfordville";
+  body: string;
+  collection: "areas";
+  data: InferEntrySchema<"areas">
+} & { render(): Render[".mdx"] };
+"frenchtown.mdx": {
+	id: "frenchtown.mdx";
+  slug: "frenchtown";
+  body: string;
+  collection: "areas";
+  data: InferEntrySchema<"areas">
+} & { render(): Render[".mdx"] };
+"killearn-estates.mdx": {
+	id: "killearn-estates.mdx";
+  slug: "killearn-estates";
+  body: string;
+  collection: "areas";
+  data: InferEntrySchema<"areas">
+} & { render(): Render[".mdx"] };
+"midtown.mdx": {
+	id: "midtown.mdx";
+  slug: "midtown";
+  body: string;
+  collection: "areas";
+  data: InferEntrySchema<"areas">
+} & { render(): Render[".mdx"] };
+"southwood.mdx": {
+	id: "southwood.mdx";
+  slug: "southwood";
   body: string;
   collection: "areas";
   data: InferEntrySchema<"areas">
 } & { render(): Render[".mdx"] };
 };
 "services": {
-"example-service.mdx": {
-	id: "example-service.mdx";
-  slug: "example-service";
+"crack-repair.mdx": {
+	id: "crack-repair.mdx";
+  slug: "crack-repair";
+  body: string;
+  collection: "services";
+  data: InferEntrySchema<"services">
+} & { render(): Render[".mdx"] };
+"drainage-correction.mdx": {
+	id: "drainage-correction.mdx";
+  slug: "drainage-correction";
+  body: string;
+  collection: "services";
+  data: InferEntrySchema<"services">
+} & { render(): Render[".mdx"] };
+"foundation-inspection.mdx": {
+	id: "foundation-inspection.mdx";
+  slug: "foundation-inspection";
+  body: string;
+  collection: "services";
+  data: InferEntrySchema<"services">
+} & { render(): Render[".mdx"] };
+"pier-installation.mdx": {
+	id: "pier-installation.mdx";
+  slug: "pier-installation";
+  body: string;
+  collection: "services";
+  data: InferEntrySchema<"services">
+} & { render(): Render[".mdx"] };
+"slab-lifting.mdx": {
+	id: "slab-lifting.mdx";
+  slug: "slab-lifting";
   body: string;
   collection: "services";
   data: InferEntrySchema<"services">

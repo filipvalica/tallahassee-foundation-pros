@@ -46,7 +46,8 @@ export const siteConfig = {
   },
 
   // ── Analytics ─────────────────────────────────────────────────────────────
-  ga4MeasurementId: "G-XXXXXXXXXX",
+  ga4MeasurementId:   "G-XXXXXXXXXX",
+  cfAnalyticsToken:   "",   // CF Dashboard → Web Analytics → tallahasseefoundationpros.com → token
 
   // ── Design ────────────────────────────────────────────────────────────────
   accentColor: "#7c3f1a",   // brick/earth tone for foundation repair
